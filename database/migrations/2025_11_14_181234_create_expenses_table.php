@@ -15,8 +15,8 @@ return new class extends Migration {
 			$table->float('bedrag');
 			$table->string('categorie');
 			$table->string('omschrijving');
-			$table->string('status');
-			$table->string('afgekeurd_omschrijving');
+			$table->string('status')->default('pending');
+			$table->string('afgekeurd_omschrijving')->nullable();
 			$table->timestamps();
 		});
 	}
