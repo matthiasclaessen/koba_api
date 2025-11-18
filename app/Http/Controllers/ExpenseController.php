@@ -47,7 +47,7 @@ class ExpenseController extends Controller {
 		
 		return response()->json([
 			'message' => 'Expense approved successfully.',
-			'data' => $expense->fresh()
+			'data' => $expense
 		]);
 	}
 	
@@ -65,7 +65,7 @@ class ExpenseController extends Controller {
 		
 		return response()->json([
 			'message' => 'Expense rejected successfully.',
-			'data' => $expense->fresh()
+			'data' => $expense
 		]);
 	}
 }
