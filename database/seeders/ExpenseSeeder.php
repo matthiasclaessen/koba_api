@@ -13,6 +13,7 @@ class ExpenseSeeder extends Seeder {
 	public function run(): void {
 		DB::table('expenses')->insert([
 			[
+				'user_id' => 1,
 				'bedrag'                 => 50,
 				'categorie'              => 'Aankoop',
 				'omschrijving'           => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -22,6 +23,7 @@ class ExpenseSeeder extends Seeder {
 				'updated_at'             => now(),
 			],
 			[
+				'user_id' => 2,
 				'bedrag'                 => 200,
 				'categorie'              => 'Dienstverplaatsing',
 				'omschrijving'           => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -31,6 +33,7 @@ class ExpenseSeeder extends Seeder {
 				'updated_at'             => now(),
 			],
 			[
+				'user_id' => 1,
 				'bedrag'                 => 75,
 				'categorie'              => 'Woon-werkverkeer',
 				'omschrijving'           => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
@@ -40,6 +43,7 @@ class ExpenseSeeder extends Seeder {
 				'updated_at'             => now(),
 			],
 			[
+				'user_id' => 2,
 				'bedrag'                 => 500,
 				'categorie'              => 'Aankoop',
 				'omschrijving'           => 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
